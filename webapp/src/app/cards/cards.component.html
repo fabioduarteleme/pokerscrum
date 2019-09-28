@@ -1,0 +1,7 @@
+<div class="card-number"
+    *ngFor="let number of numbers"
+    (click)="clickEvent()"  [ngClass]="status ? 'clicked' : 'default'" >
+    
+    {{number.number}} <br> {{number.active}}
+
+</div>

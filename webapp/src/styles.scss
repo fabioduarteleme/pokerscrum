@@ -5,4 +5,22 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-$primary: #005fcb
+$primary: #005fcb;
+$secondary: #bbcbd5;
+
+
+ul.menu{
+    position:relative;
+
+    li {
+        display:inline-block;
+        color:$secondary;
+        list-style: none;
+        margin: 0px 10px;
+
+        &.selected{
+            color:white;
+        }
+    }
+
+}
