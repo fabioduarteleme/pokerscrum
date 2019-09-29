@@ -11,6 +11,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { HomeComponent } from './pages/home/home.component';
 import { PlayComponent } from './pages/play/play.component';
 import { NgxSpinnerModule } from "ngx-spinner";
+import { MalihuScrollbarModule } from 'ngx-malihu-scrollbar';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { NgxSpinnerModule } from "ngx-spinner";
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    NgxSpinnerModule
+    NgxSpinnerModule,
+    MalihuScrollbarModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

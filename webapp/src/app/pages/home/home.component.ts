@@ -6,6 +6,7 @@ import {
   animate,
   transition
 } from '@angular/animations';
+import { MalihuScrollbarService } from 'ngx-malihu-scrollbar';
 
 
 @Component({
@@ -23,10 +24,12 @@ import {
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private mScrollbarService: MalihuScrollbarService,
+  ) { }
 
   ngOnInit() {
-     
+    this.mScrollbarService.initScrollbar(document.body, { axis: 'y', theme: 'minimal-dark' });
   }
 
 }
