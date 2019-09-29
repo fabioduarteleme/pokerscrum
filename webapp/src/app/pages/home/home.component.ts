@@ -13,7 +13,7 @@ import {
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
   animations:[
-    trigger('flyInOut', [
+    trigger('cardsAnime', [
       transition(':enter', [
         style({transform: 'translateY(100%)'}),
         animate('0.3s')
