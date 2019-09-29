@@ -6,7 +6,6 @@
     position: relative;
     border-radius: 28px;
     margin: 15px;
-    height: 222px;
     font-size: 70px;
     color: $primary;
     font-weight: bold;
@@ -15,7 +14,8 @@
     // animation-name: fade;
     // -webkit-animation-duration: 0.5s;
     // animation-duration: 0.5s;
-    width: 170px;
+    width: 17vw;
+    height: 38vh;
     box-shadow: 3px 5px #0f58ab;
     display: flex;
     justify-content: center;
@@ -29,7 +29,7 @@
 }
 
 .card-number.clicked{
-    background:red;
+    background:#dee6ea;
     animation-name: toggle;
     animation-duration: 0.3s;
 }

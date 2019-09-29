@@ -67,6 +67,7 @@ ul.menu{
         color:$secondary;
         list-style: none;
         margin: 0px 10px;
+        cursor:pointer;
 
         &.selected{
             color:white;

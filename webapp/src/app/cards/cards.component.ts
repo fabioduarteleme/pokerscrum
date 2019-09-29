@@ -13,13 +13,16 @@ export class CardsComponent implements OnInit {
 
   numbers = [
     { number: 0, active: false},
+    { number: '1/2', active: false},
     { number: 1, active: false},
+    { number: 2, active: false},
+    { number: 3, active: true},
     { number: 4, active: false},
-    { number: 7, active: true},
+    { number: 5, active: false},
+    { number: 13, active: false},
     { number: 20, active: false},
-    { number: 80, active: false},
-    { number: 90, active: false},
-    { number: 70, active: false}
+    { number: 40, active: false},
+    { number: 100, active: false}
 
   ];
 

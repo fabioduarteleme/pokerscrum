@@ -1,6 +1,15 @@
 <div class="search-room text-center" [@searchAnime]>
     <p> Digite o Código da Sala</p>
-    <div class="mask-anime">
-        <input type="text" placeholder="Ex: 458594" pattern=".*\S.*">
+    
+    <div id="form">
+        <input type="text" maxlength="1" size="1" min="0" max="9" pattern="[0-9]{1}">
+        <input type="text" maxlength="1" size="1" min="0" max="9" pattern="[0-9]{1}">
+        <input type="text" maxlength="1" size="1" min="0" max="9" pattern="[0-9]{1}">
+        <input type="text" maxlength="1" size="1" min="0" max="9" pattern="[0-9]{1}">
+        <input type="text" maxlength="1" size="1" min="0" max="9" pattern="[0-9]{1}">
     </div>
+    
+    <!-- <div class="mask-anime">
+        <input type="text" placeholder="Ex: 458594" pattern=".*\S.*">
+    </div> -->
 </div>
