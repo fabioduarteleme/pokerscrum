@@ -15,11 +15,8 @@ import {
   animations:[
     trigger('cardsAnime', [
       transition(':enter', [
-        style({transform: 'translateY(100%)'}),
-        animate('0.3s')
-      ]),
-      transition(':leave', [
-        animate('0.3s', style({transform: 'translateY(-100%)'}))
+        style({transform: 'translateY(100%)', opacity:0}),
+        animate('0.8s ease-out')
       ])
     ])
   ]
@@ -29,6 +26,7 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+     
   }
 
 }
