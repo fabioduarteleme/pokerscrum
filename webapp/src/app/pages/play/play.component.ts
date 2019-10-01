@@ -12,11 +12,10 @@ import { MalihuScrollbarService } from 'ngx-malihu-scrollbar';
   styleUrls: ['./play.component.scss'],
   animations:[
     animations.trigger('cardsAnime', [
-
       animations.transition('* => *', [
-        animations.query('.card-number', animations.style({ transform: 'translateY(30%) rotateY(90deg)', opacity: 0})),
+        animations.query('.card-number', animations.style({ transform: 'translateY(60%) rotateY(90deg) scale(0)', opacity: 0})),
         animations.query('.card-number', animations.stagger('100ms', [
-          animations.animate('0.5s ease-out', animations.style({ transform: 'translateY(0%) rotateY(360deg)', opacity: 1}))
+          animations.animate('0.5s ease-out', animations.style({ transform: 'translateY(0%) rotateY(360deg) scale(1)', opacity: 1}))
         ]))
       ])
 
