@@ -20,12 +20,12 @@ import { MalihuScrollbarService } from 'ngx-malihu-scrollbar';
     trigger('cardsAnime', [
 
       transition('* => *', [
-        query('.cards-home', style({ transform: 'translateY(100%)', opacity: 0})),
+        query('.cards-home', style({ transform: 'translateY(100%) rotateY(90deg)', opacity: 0})),
         query('.cards-home', stagger('150ms', [
-          animate('0.3s ease-out', style({ transform: 'translateY(0%)', opacity: 1}))
+          animate('0.5s ease-out', style({ transform: 'translateY(0%) rotateY(360deg)', opacity: 1}))
         ]))
       ])
-      
+
     ])
   ]
 })
