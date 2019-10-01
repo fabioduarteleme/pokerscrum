@@ -12,6 +12,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { PlayComponent } from './pages/play/play.component';
 import { NgxSpinnerModule } from "ngx-spinner";
 import { MalihuScrollbarModule } from 'ngx-malihu-scrollbar';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { MalihuScrollbarModule } from 'ngx-malihu-scrollbar';
     SearchRoomComponent,
     AboutComponent,
     HomeComponent,
-    PlayComponent
+    PlayComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,

@@ -1,15 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import {
-  trigger,
-  state,
-  style,
-  animate,
-  transition,
-  keyframes,
-  query,
-  stagger
-} from '@angular/animations';
-import { MalihuScrollbarService } from 'ngx-malihu-scrollbar';
+import { Component, OnInit, Inject } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { trigger, transition, query, style, stagger, animate } from '@angular/animations';
 
 
 @Component({
@@ -32,11 +23,13 @@ import { MalihuScrollbarService } from 'ngx-malihu-scrollbar';
 export class HomeComponent implements OnInit {
 
   constructor(
-    private mScrollbarService: MalihuScrollbarService,
-  ) { }
+    @Inject(DOCUMENT) private document: any
+  ) {
+      this.document.body.classList.add('hidden-bars');
+  }
 
   ngOnInit() {
-    this.mScrollbarService.initScrollbar(document.body, { axis: 'y', theme: 'minimal-dark' });
+
   }
 
 }

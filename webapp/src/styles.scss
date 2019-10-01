@@ -2,13 +2,18 @@
 
 body{
     background: #005FCB !important;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif !important;
 }
 
 $primary: #005fcb;
 $secondary: #bbcbd5;
 $placeholder-color:#BCCCD5;
 
+h1 {
+    color: white;
+    text-align: center;
+    font-weight: 100;
+}
 
 a:focus,
 ul:focus,
@@ -45,8 +50,19 @@ color: $placeholder-color;
 color: $placeholder-color;
 }
 
-
-
+.hidden-bars {
+ 
+    .mCSB_dragger_bar {
+        background: transparent !important;
+        cursor: default !important;
+        display: none !important;
+    }
+    
+    .mCSB_container {
+        height: 100vh;
+    }
+    
+}
 .header{
     padding:40px;
 }

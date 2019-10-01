@@ -1,12 +1,12 @@
 <ngx-spinner
-  bdColor="rgba(0,95,203,0.8)"
-  size="default"
+  bdColor="rgba(0,95,203,0.9)"
+  size="large"
   color="#BCCCD5"
   type="ball-scale-multiple"
-  [fullScreen] = "false"
+  [fullScreen] = "true"
 >
   <p style="font-size: 14px; color: #BCCCD5">Criando nova sala...</p>
 </ngx-spinner>
 
 
-<app-cards class="row cards-bottom-home d-flex justify-content-center"></app-cards>
+<app-cards [@cardsAnime] class="row cards-bottom-home d-flex justify-content-center"></app-cards>
