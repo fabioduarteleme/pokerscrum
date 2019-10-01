@@ -4,7 +4,10 @@ import {
   state,
   style,
   animate,
-  transition
+  transition,
+  keyframes,
+  query,
+  stagger
 } from '@angular/animations';
 import { MalihuScrollbarService } from 'ngx-malihu-scrollbar';
 
@@ -15,10 +18,14 @@ import { MalihuScrollbarService } from 'ngx-malihu-scrollbar';
   styleUrls: ['./home.component.scss'],
   animations:[
     trigger('cardsAnime', [
-      transition(':enter', [
-        style({transform: 'translateY(100%)', opacity:0}),
-        animate('0.8s ease-out')
+
+      transition('* => *', [
+        query('.cards-home', style({ transform: 'translateY(100%)', opacity: 0})),
+        query('.cards-home', stagger('150ms', [
+          animate('0.3s ease-out', style({ transform: 'translateY(0%)', opacity: 1}))
+        ]))
       ])
+      
     ])
   ]
 })
